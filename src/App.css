@@ -1,0 +1,118 @@
+h1{
+    margin: 0;
+    padding: 0;
+}
+.h-67{
+    height: 67px;
+}
+.company-logo img{
+    width: 80px;
+}
+
+.w-10{
+    width: 50px;
+}
+.text-s{
+    font-size: 12px;
+}
+.w-130{
+    width: 200px;
+}
+.btn-primary{
+    background-color: #3d02d0;
+    border-color: #3d02d0;
+}
+.placeholder-small{
+    font-size: 11px;
+}
+.text-xs{
+    font-size: x-small;
+}
+.p-24{padding: 24px 0;}
+.group-profile{
+    width: 150px;
+    padding: 4px 2px;
+    justify-content: center;
+}
+.group-profile p{
+    font-size: x-small;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+#nav{
+    position: fixed;
+    height: 56px;
+    background-color: #fff;
+    z-index: 100;
+}
+a.active{
+    color: #7e8080;
+}
+#theme-icon{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+#burger{
+    cursor: pointer;
+    display: none;
+    width: 40px;
+}
+@media (max-width: 768px){
+    #burger{
+        display: block;
+    }
+    .active #burger {
+        z-index: 100;
+    }
+    .menu{
+        position:absolute;
+        padding: 60px 50px;
+        top: -100%;
+        right: -100%;
+        flex-direction: column;
+        background-color: blue;
+        height: 100vh;
+    }
+    .menu a{
+        color: #fff;
+    }
+    .active .menu{
+        right: 0;
+        top: 0;
+    }
+    .company-logo img{
+        width: 60px;
+    }
+}
+@media (max-width: 540px){
+    .text-sm{
+        font-size: x-large;
+    }
+    .hero-xs-text{
+        font-size: xx-small;
+    }
+    .hero-xs-text::holder{
+        font-size: xx-small;
+    }
+    .company-logo img{
+        width: 40px;
+    }
+    h1{
+        font-size: 1.2rem;
+    }
+    .w-10{
+        width: 40px;
+    }
+    .service-sm-text{
+        font-size: 8px;
+    }
+    .profile-img{
+        width: 20px;
+    }
+}
