@@ -18,7 +18,7 @@ export default function Team() {
                 <div className="row">
                 {teamInfo.slice(0, 4).map((team) => (
                     <div key={team.name} className="col-6 col-lg-3 mt-4">
-                    <div className="d-flex border align-items-center rounded h-67 gap-2 p-2 ">
+                    <div className="team-container d-flex  align-items-center rounded h-67 gap-2 p-2 ">
                         <img src={team.image} alt="photo" className="profile-img rounded-circle" width={'30px'}/>
                         <div className="d-flex flex-column gap-1">
                             <p className="text-xs hero-xs-text">{team.name}</p>
@@ -31,7 +31,7 @@ export default function Team() {
                 <div className="row ">
                 {teamInfo.slice(4, 8).map((team) => ( 
                     <div key={team.name} className="col-6 col-lg-3  mt-4">
-                    <div  className="d-flex border rounded align-items-center h-67 gap-2 p-2 ">
+                    <div  className="team-container d-flex  rounded align-items-center h-67 gap-2 p-2 ">
                         <img src={team.image} alt="photo" className="profile-img rounded-circle" width={'30px'}/>
                         <div className="d-flex flex-column gap-1">
                             <p className="text-xs">{team.name}</p>

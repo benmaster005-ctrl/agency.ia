@@ -3,7 +3,7 @@ import {company_logos} from '../assets/assets.js';
 
 export default function Hero({id}) {
 
-    return <section id={id} className='d-flex pt-5 gap-2 justify-content-center flex-column'>
+    return <section id={id} className='d-flex pt-50 gap-2 justify-content-center flex-column'>
         <div className='d-flex justify-content-center '>
             <div className='group-profile d-flex align-items-center  border rounded-pill border-secondary-subtle'>
                 <img src={assets.group_profile} alt="group profile" width={'25%'}/>

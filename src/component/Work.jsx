@@ -12,9 +12,9 @@ export default function Work({id}) {
         <div className="container d-flex gap-3 card-group text-start">
             <div className="card col border border-0 " style={{width: '18rem'}}>
                 <img src={work_mobile_app} className="card-img-top" alt="..." />
-                <div className="card-body ">
+                <div className="card-body">
                     <h5 className="card-title text-s hero-xs-text">Mobile app marketing</h5>
-                    <p className="card-text fw-light text-xs service-sm-text">We turn bold ideas into power digital solutions that connect...</p>
+                    <p className="card-text fw-light text-xs">We turn bold ideas into power digital  solutions that connect...</p>
                 </div>
             </div>
             <div className="card col border border-0" style={{width: '18rem'}}>

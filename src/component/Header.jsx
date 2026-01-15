@@ -53,22 +53,24 @@ export default function Header() {
         theme === 'dark' ? nav.classList.add('bg-dark') : nav.classList.remove('bg-dark');
     }, [theme])
 
-    return <nav id='nav' className='py-2 container d-flex justify-content-between align-items-center'>
-        <img src={theme === 'light' ? logo : logo_dark} className='w-25 w-md-full' alt="logo" />
-        <ul id='menu' onClick={closeSideBar} className='menu list-unstyled m-0 d-flex gap-3'>
-            <li><a href="#">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#our-work">OurWork</a></li>
-            <li><a href="#contact">Contact</a></li>
-            {isMobile && <button id='connectBtn' className="btn btn-primary pe-4 ps-4  text-s rounded-pill d-flex align-items-center gap-1"><p>connect  </p>  <img src={arrow_icon} width={'14px'}/></button>}
-        </ul>
-        <div className='justify-content-between theme-div d-flex gap-2 align-items-center'>
-            <img onClick={toggleTheme} src={theme === 'light' ? moon_icon : sun_icon} alt="theme" className='border rounded-circle p-1' id='theme-icon' />
-            {!isMobile && <button id='connectBtn' className="btn btn-primary pe-4 ps-4 text-s rounded-pill ry d-flex align-items-center"><p>connect  </p> <img src={arrow_icon} width={'14px'}/></button>}
-            <span onClick={openSideBar} id="burger">
-                <img src={burgerIcon ? close_icon : (theme === 'light' ? menu_icon : menu_icon_dark)} alt="" />
-            </span>
+    return <nav id='nav' className='py-2 '>
+        <div className='container d-flex justify-content-between align-items-center'>
+            <img src={theme === 'light' ? logo : logo_dark} className='' alt="logo" />
+            <ul id='menu' onClick={closeSideBar} className='menu list-unstyled m-0 d-flex gap-3'>
+                <li><a href="#">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#our-work">OurWork</a></li>
+                <li><a href="#contact">Contact</a></li>
+                {isMobile && <button id='connectBtn' className="btn btn-primary pe-4 ps-4  text-s rounded-pill d-flex align-items-center gap-1"><p>connect  </p>  <img src={arrow_icon} width={'14px'}/></button>}
+            </ul>
+            <div className='justify-content-between theme-div d-flex gap-2 align-items-center'>
+                <img onClick={toggleTheme} src={theme === 'light' ? moon_icon : sun_icon} alt="theme" className='border rounded-circle p-1' id='theme-icon' />
+                {!isMobile && <button id='connectBtn' className="btn btn-primary pe-4 ps-4 text-s rounded-pill ry d-flex align-items-center"><p>connect  </p> <img src={arrow_icon} width={'14px'}/></button>}
+                <span onClick={openSideBar} id="burger">
+                    <img src={burgerIcon ? close_icon : (theme === 'light' ? menu_icon : menu_icon_dark)} />
+                </span>
 
+            </div>
         </div>
     </nav>
 }

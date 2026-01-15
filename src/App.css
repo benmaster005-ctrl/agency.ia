@@ -8,6 +8,25 @@ h1{
 .company-logo img{
     width: 80px;
 }
+.form-group{
+    display: flex;
+    justify-content: center;
+}
+.form-group form{
+    width: 500px;
+}
+.card-body{
+    padding: 5px;
+    padding-top: 10px;
+    
+}
+.team-container{
+    box-shadow: 2px 2px 2px gray;
+    
+}
+.w-197{
+    width: 198px;
+}
 
 .w-10{
     width: 50px;
@@ -44,11 +63,15 @@ p{
 a{
     text-decoration: none;
 }
+.pt-50{
+    padding-top: 100px;
+}
 #nav{
     position: fixed;
     height: 56px;
     background-color: #fff;
     z-index: 100;
+    width: 100%;
 }
 a.active{
     color: #7e8080;
@@ -91,15 +114,7 @@ a.active{
     }
 }
 @media (max-width: 540px){
-    .text-sm{
-        font-size: x-large;
-    }
-    .hero-xs-text{
-        font-size: xx-small;
-    }
-    .hero-xs-text::holder{
-        font-size: xx-small;
-    }
+
     .company-logo img{
         width: 40px;
     }
@@ -109,9 +124,7 @@ a.active{
     .w-10{
         width: 40px;
     }
-    .service-sm-text{
-        font-size: 8px;
-    }
+
     .profile-img{
         width: 20px;
     }
