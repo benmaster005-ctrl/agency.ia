@@ -18,6 +18,7 @@ h1{
 .card-body{
     padding: 5px;
     padding-top: 10px;
+    padding-bottom: 20px;
     
 }
 .team-container{
@@ -127,5 +128,8 @@ a.active{
 
     .profile-img{
         width: 20px;
+    }
+    .logo{
+        width: 130px;
     }
 }

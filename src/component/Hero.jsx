@@ -1,9 +1,20 @@
 import assets from '../assets/assets.js';
 import {company_logos} from '../assets/assets.js';
+import { motion } from 'framer-motion';
 
 export default function Hero({id}) {
 
-    return <section id={id} className='d-flex pt-50 gap-2 justify-content-center flex-column'>
+    return <motion.section 
+        id={id} 
+        className='d-flex pt-50 gap-2 justify-content-center flex-column'
+        initial={{opacity: 0, y: 40}}
+        whileInView={{opacity: 1, y:0}}
+        transition={{duration: 0.6, ease: "easeOut"}}
+        viewport={{once: true}}
+        >
+        <div id="alert" className="alert alert-success d-none">
+            Your message have been send!
+        </div>
         <div className='d-flex justify-content-center '>
             <div className='group-profile d-flex align-items-center  border rounded-pill border-secondary-subtle'>
                 <img src={assets.group_profile} alt="group profile" width={'25%'}/>
@@ -29,5 +40,5 @@ export default function Hero({id}) {
             <div className="col-2"><img src={company_logos.airbnb_logo} alt="airbnb_logo" /></div>
             <div className="col-2"><img src={company_logos.zoom_logo} alt="zoom_logo" /></div>
         </div>        
-    </section>
+    </motion.section>
 }

@@ -55,7 +55,7 @@ export default function Header() {
 
     return <nav id='nav' className='py-2 '>
         <div className='container d-flex justify-content-between align-items-center'>
-            <img src={theme === 'light' ? logo : logo_dark} className='' alt="logo" />
+            <img src={theme === 'light' ? logo : logo_dark} className='logo' alt="logo" />
             <ul id='menu' onClick={closeSideBar} className='menu list-unstyled m-0 d-flex gap-3'>
                 <li><a href="#">Home</a></li>
                 <li><a href="#services">Services</a></li>

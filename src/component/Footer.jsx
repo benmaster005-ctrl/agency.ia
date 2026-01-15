@@ -22,7 +22,7 @@ export default function Footer() {
             <div className="d-flex flex-wrap justify-content-between align-items-center">
                 <div className='d-flex flex-column gap-3'>    
                     <div>
-                        <img src={theme === 'light' ? logo : logo_dark} alt="logo" className='' />
+                        <img src={theme === 'light' ? logo : logo_dark} alt="logo" className='logo' />
                         <p className='text-s hero-xs-text pt-2 fw-light'>From strategy to execution, we craft digital solutions that move your business forward.</p>
                     </div>
                     <div className='d-flex gap-2 text-s hero-xs-text'>

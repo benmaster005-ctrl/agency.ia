@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { teamData } from "../assets/assets";
+import { motion } from "framer-motion";
 
 export default function Team() {
     const [teamInfo, setTeamInfo] = useState([]);
@@ -8,7 +9,12 @@ export default function Team() {
         setTeamInfo(teamData);
     }, [])
 
-    return <section className="pt-5 ">
+    return <motion.section 
+        className="pt-5 "
+        initial={{opacity: 0, y: 40}}
+        whileInView={{opacity: 1, y:0}}
+        transition={{duration: 0.6, ease: "easeOut"}}
+        viewport={{once: true}}>
         <div>
             <div>
                 <h1>Meet the Team</h1>
@@ -44,5 +50,5 @@ export default function Team() {
                 
             </div>
         </div>
-    </section>
+    </motion.section>
 }
